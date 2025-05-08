@@ -24,6 +24,9 @@ headerNav.addEventListener("click", (e) => {
 if (isTouchDevice) {
   navGroups.forEach((navGroup) => {
     navGroup.addEventListener("click", () => {
+      if (window.innerWidth > 768) {
+      navGroups.forEach(nav => nav.classList.remove("open"));
+    }
       navGroup.classList.toggle("open");
     });
   });
