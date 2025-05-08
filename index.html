@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor | Intro section with dropdown navigation">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="" class="header-logo">
+        <img src="images/logo.svg" alt="SNAP Logo" draggable="false">
+      </a>
+
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <div class="hamburger-wrapper">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </button>
+
+      <nav class="header-nav">
+        <div class="nav-wrapper">
+          <ul class="nav-menu">
+            <li class="nav-item nav-group">
+              <button class="dropdown-toggle">Features</button>
+
+              <div class="dropdown-menu">
+                <ul class="dropdown-list">
+                  <li><a href="#">Todo List</a></li>
+                  <li><a href="#">Calendar</a></li>
+                  <li><a href="#">Reminders</a></li>
+                  <li><a href="#">Planning</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item nav-group">
+              <button class="dropdown-toggle">Company</button>
+
+              <div class="dropdown-menu">
+                <ul class="dropdown-list">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item"><a href="#">Careers</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+          </ul>
+
+          <ul class="nav-auth">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/image-hero-desktop.png">
+          <img src="images/image-hero-mobile.png" alt="hero image" draggable="false">
+        </picture>
+
+        <div class="hero-text">
+          <div class="text">
+            <h1>
+              <span>Make</span>
+              <span>remote work</span>
+            </h1>
+
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+              productivity soar.</p>
+            <a href="">Learn more</a>
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-databiz.svg" alt="databiz" draggable="false">
+            <img src="images/client-audiophile.svg" alt="audiophile" draggable="false">
+            <img src="images/client-meet.svg" alt="meet" draggable="false">
+            <img src="images/client-maker.svg" alt="maker" draggable="false">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-credit">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com">arisdwii</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
